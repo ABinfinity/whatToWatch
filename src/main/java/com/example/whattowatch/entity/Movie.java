@@ -28,8 +28,8 @@ public class Movie {
 
     private String image;
     private String crew;
-    private int imDbRating;
-    private int imDbRatingCount;
+    private float imDbRating;
+    private float imDbRatingCount;
 
     public String getId() {
         return id;
@@ -87,19 +87,34 @@ public class Movie {
         this.crew = crew;
     }
 
-    public int getImDbRating() {
+    public float getImDbRating() {
         return imDbRating;
     }
 
-    public void setImDbRating(int imDbRating) {
+    public void setImDbRating(float imDbRating) {
         this.imDbRating = imDbRating;
     }
 
-    public int getImDbRatingCount() {
+    public float getImDbRatingCount() {
         return imDbRatingCount;
     }
 
-    public void setImDbRatingCount(int imDbRatingCount) {
+    public void setImDbRatingCount(float imDbRatingCount) {
         this.imDbRatingCount = imDbRatingCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "id='" + id + '\'' +
+                ", rank=" + rank +
+                ", title='" + title + '\'' +
+                ", fullTitle='" + fullTitle + '\'' +
+                ", year=" + year +
+                ", image='" + image + '\'' +
+                ", crew='" + crew + '\'' +
+                ", imDbRating=" + imDbRating +
+                ", imDbRatingCount=" + imDbRatingCount +
+                '}';
     }
 }
