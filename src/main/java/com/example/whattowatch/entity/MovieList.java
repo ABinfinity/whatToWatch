@@ -1,4 +1,4 @@
-package com.example.whattowatch;
+package com.example.whattowatch.entity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
