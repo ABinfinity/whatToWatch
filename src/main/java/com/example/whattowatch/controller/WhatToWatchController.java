@@ -27,7 +27,6 @@ public class WhatToWatchController {
 
             var movie = movies.getItems();
             var movieN = movie.get(rank);
-            System.out.println(movieN);
 
             return movieN;
         }
